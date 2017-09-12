@@ -1,0 +1,41 @@
+﻿生成启动时间为 2017/9/11 19:47:26。
+     1>项目“E:\codingWorkplace\dlibLearn\zlib\zlib.vcxproj”在节点 5 上(Rebuild 个目标)。
+     1>ClCompile:
+         E:\vs2015\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\zlib.pdb" /Gd /TC /errorReport:prompt "..\..\..\001Company\face\dlib-19.2\dlib\external\zlib\adler32.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\zlib\compress.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\zlib\crc32.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\zlib\deflate.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\zlib\gzclose.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\zlib\gzlib.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\zlib\gzread.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\zlib\gzwrite.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\zlib\infback.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\zlib\inffast.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\zlib\inflate.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\zlib\inftrees.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\zlib\trees.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\zlib\uncompr.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\zlib\zutil.c"
+         adler32.c
+         compress.c
+         crc32.c
+         deflate.c
+         gzclose.c
+         gzlib.c
+         gzread.c
+         gzwrite.c
+         infback.c
+         inffast.c
+         inflate.c
+         inftrees.c
+         trees.c
+         uncompr.c
+         zutil.c
+       Lib:
+         E:\vs2015\VC\bin\x86_amd64\Lib.exe /OUT:"E:\codingWorkplace\dlibLearn\x64\Release\zlib.lib" /NOLOGO /MACHINE:X64 /LTCG x64\Release\adler32.obj
+         x64\Release\compress.obj
+         x64\Release\crc32.obj
+         x64\Release\deflate.obj
+         x64\Release\gzclose.obj
+         x64\Release\gzlib.obj
+         x64\Release\gzread.obj
+         x64\Release\gzwrite.obj
+         x64\Release\infback.obj
+         x64\Release\inffast.obj
+         x64\Release\inflate.obj
+         x64\Release\inftrees.obj
+         x64\Release\trees.obj
+         x64\Release\uncompr.obj
+         x64\Release\zutil.obj
+         zlib.vcxproj -> E:\codingWorkplace\dlibLearn\x64\Release\zlib.lib
+     1>已完成生成项目“E:\codingWorkplace\dlibLearn\zlib\zlib.vcxproj”(Rebuild 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:02.39

@@ -1,0 +1,41 @@
+﻿生成启动时间为 2017/9/11 19:47:24。
+     1>项目“E:\codingWorkplace\dlibLearn\png\png.vcxproj”在节点 4 上(Rebuild 个目标)。
+     1>ClCompile:
+         E:\vs2015\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\png.pdb" /Gd /TC /errorReport:prompt "..\..\..\001Company\face\dlib-19.2\dlib\external\libpng\png.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\libpng\pngerror.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\libpng\pngget.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\libpng\pngmem.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\libpng\pngpread.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\libpng\pngread.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\libpng\pngrio.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\libpng\pngrtran.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\libpng\pngrutil.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\libpng\pngset.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\libpng\pngtrans.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\libpng\pngwio.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\libpng\pngwrite.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\libpng\pngwtran.c" "..\..\..\001Company\face\dlib-19.2\dlib\external\libpng\pngwutil.c"
+         png.c
+         pngerror.c
+         pngget.c
+         pngmem.c
+         pngpread.c
+         pngread.c
+         pngrio.c
+         pngrtran.c
+         pngrutil.c
+         pngset.c
+         pngtrans.c
+         pngwio.c
+         pngwrite.c
+         pngwtran.c
+         pngwutil.c
+       Lib:
+         E:\vs2015\VC\bin\x86_amd64\Lib.exe /OUT:"E:\codingWorkplace\dlibLearn\x64\Release\png.lib" /NOLOGO /MACHINE:X64 /LTCG x64\Release\png.obj
+         x64\Release\pngerror.obj
+         x64\Release\pngget.obj
+         x64\Release\pngmem.obj
+         x64\Release\pngpread.obj
+         x64\Release\pngread.obj
+         x64\Release\pngrio.obj
+         x64\Release\pngrtran.obj
+         x64\Release\pngrutil.obj
+         x64\Release\pngset.obj
+         x64\Release\pngtrans.obj
+         x64\Release\pngwio.obj
+         x64\Release\pngwrite.obj
+         x64\Release\pngwtran.obj
+         x64\Release\pngwutil.obj
+         png.vcxproj -> E:\codingWorkplace\dlibLearn\x64\Release\png.lib
+     1>已完成生成项目“E:\codingWorkplace\dlibLearn\png\png.vcxproj”(Rebuild 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:08.30

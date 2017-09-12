@@ -1,0 +1,101 @@
+﻿生成启动时间为 2017/9/11 19:47:24。
+     1>项目“E:\codingWorkplace\dlibLearn\jpeg\jpeg.vcxproj”在节点 3 上(Rebuild 个目标)。
+     1>ClCompile:
+         E:\vs2015\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\jpeg.pdb" /Gd /TP /errorReport:prompt "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jcapimin.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jcapistd.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jccoefct.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jccolor.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jcdctmgr.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jchuff.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jcinit.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jcmainct.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jcmarker.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jcmaster.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jcomapi.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jcparam.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jcphuff.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jcprepct.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jcsample.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jdapimin.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jdapistd.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jdatadst.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jdatasrc.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jdcoefct.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jdcolor.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jddctmgr.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jdhuff.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jdinput.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jdmainct.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jdmarker.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jdmaster.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jdmerge.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jdphuff.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jdpostct.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jdsample.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jerror.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jfdctflt.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jfdctfst.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jfdctint.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jidctflt.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jidctfst.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jidctint.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jidctred.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jmemmgr.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jmemnobs.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jquant1.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jquant2.cpp" "..\..\..\001Company\face\dlib-19.2\dlib\external\libjpeg\jutils.cpp"
+         jcapimin.cpp
+         jcapistd.cpp
+         jccoefct.cpp
+         jccolor.cpp
+         jcdctmgr.cpp
+         jchuff.cpp
+         jcinit.cpp
+         jcmainct.cpp
+         jcmarker.cpp
+         jcmaster.cpp
+         jcomapi.cpp
+         jcparam.cpp
+         jcphuff.cpp
+         jcprepct.cpp
+         jcsample.cpp
+         jdapimin.cpp
+         jdapistd.cpp
+         jdatadst.cpp
+         jdatasrc.cpp
+         jdcoefct.cpp
+         正在编译...
+         jdcolor.cpp
+         jddctmgr.cpp
+         jdhuff.cpp
+         jdinput.cpp
+         jdmainct.cpp
+         jdmarker.cpp
+         jdmaster.cpp
+         jdmerge.cpp
+         jdphuff.cpp
+         jdpostct.cpp
+         jdsample.cpp
+         jerror.cpp
+         jfdctflt.cpp
+         jfdctfst.cpp
+         jfdctint.cpp
+         jidctflt.cpp
+         jidctfst.cpp
+         jidctint.cpp
+         jidctred.cpp
+         jmemmgr.cpp
+         正在编译...
+         jmemnobs.cpp
+         jquant1.cpp
+         jquant2.cpp
+         jutils.cpp
+       Lib:
+         E:\vs2015\VC\bin\x86_amd64\Lib.exe /OUT:"E:\codingWorkplace\dlibLearn\x64\Release\jpeg.lib" /NOLOGO /MACHINE:X64 /LTCG x64\Release\jcapimin.obj
+         x64\Release\jcapistd.obj
+         x64\Release\jccoefct.obj
+         x64\Release\jccolor.obj
+         x64\Release\jcdctmgr.obj
+         x64\Release\jchuff.obj
+         x64\Release\jcinit.obj
+         x64\Release\jcmainct.obj
+         x64\Release\jcmarker.obj
+         x64\Release\jcmaster.obj
+         x64\Release\jcomapi.obj
+         x64\Release\jcparam.obj
+         x64\Release\jcphuff.obj
+         x64\Release\jcprepct.obj
+         x64\Release\jcsample.obj
+         x64\Release\jdapimin.obj
+         x64\Release\jdapistd.obj
+         x64\Release\jdatadst.obj
+         x64\Release\jdatasrc.obj
+         x64\Release\jdcoefct.obj
+         x64\Release\jdcolor.obj
+         x64\Release\jddctmgr.obj
+         x64\Release\jdhuff.obj
+         x64\Release\jdinput.obj
+         x64\Release\jdmainct.obj
+         x64\Release\jdmarker.obj
+         x64\Release\jdmaster.obj
+         x64\Release\jdmerge.obj
+         x64\Release\jdphuff.obj
+         x64\Release\jdpostct.obj
+         x64\Release\jdsample.obj
+         x64\Release\jerror.obj
+         x64\Release\jfdctflt.obj
+         x64\Release\jfdctfst.obj
+         x64\Release\jfdctint.obj
+         x64\Release\jidctflt.obj
+         x64\Release\jidctfst.obj
+         x64\Release\jidctint.obj
+         x64\Release\jidctred.obj
+         x64\Release\jmemmgr.obj
+         x64\Release\jmemnobs.obj
+         x64\Release\jquant1.obj
+         x64\Release\jquant2.obj
+         x64\Release\jutils.obj
+         jpeg.vcxproj -> E:\codingWorkplace\dlibLearn\x64\Release\jpeg.lib
+     1>已完成生成项目“E:\codingWorkplace\dlibLearn\jpeg\jpeg.vcxproj”(Rebuild 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:08.37
