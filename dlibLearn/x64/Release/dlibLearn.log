@@ -1,4 +1,4 @@
-﻿生成启动时间为 2017/9/12 12:33:56。
+﻿生成启动时间为 2017/9/12 20:28:52。
      1>项目“E:\codingWorkplace\dlibLearn\dlibLearn\dlibLearn.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          E:\vs2015\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D NDEBUG /D _CONSOLE /D DLIB_JPEG_SUPPORT /D DLIB_PNG_SUPPORT /D DLIB_HAVE_AVX /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt main.cpp
@@ -35,13 +35,17 @@
          x64\Release\trainer.obj
      1>LINK : warning LNK4044: 无法识别的选项“/arch:AVX”；已忽略
          正在生成代码
-         5 of 8022 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
-           4 functions were new in current compilation
-           1 functions had inline decision re-evaluated but remain unchanged
+     1>e:\001company\face\dlib-19.2\dlib\image_transforms\fhog.h(564): warning C4752: 发现 Intel(R) 高级矢量扩展；请考虑使用 /arch:AVX
+     1>e:\001company\face\dlib-19.2\dlib\image_transforms\fhog.h(564): warning C4752: 发现 Intel(R) 高级矢量扩展；请考虑使用 /arch:AVX
+     1>e:\001company\face\dlib-19.2\dlib\image_transforms\fhog.h(829): warning C4752: 发现 Intel(R) 高级矢量扩展；请考虑使用 /arch:AVX
+     1>e:\001company\face\dlib-19.2\dlib\image_transforms\fhog.h(829): warning C4752: 发现 Intel(R) 高级矢量扩展；请考虑使用 /arch:AVX
+         989 of 8696 functions (11.4%) were compiled, the rest were copied from previous compilation.
+           0 functions were new in current compilation
+           62 functions had inline decision re-evaluated but remain unchanged
          已完成代码的生成
          dlibLearn.vcxproj -> E:\codingWorkplace\dlibLearn\x64\Release\dlibLearn.exe
      1>已完成生成项目“E:\codingWorkplace\dlibLearn\dlibLearn\dlibLearn.vcxproj”(Build 个目标)的操作。
 
 已成功生成。
 
-已用时间 00:00:11.73
+已用时间 00:00:13.64

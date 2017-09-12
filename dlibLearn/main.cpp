@@ -389,11 +389,11 @@ void test_face_detector_L_Detector_Camera() {
 
 	std::vector<object_detector<image_scanner_type>> my_detectors;
 	object_detector<image_scanner_type> detector_front,detector_left,detector_right, detector_left_rotate, detector_right_rotate;
-	deserialize("E:/dlibTrain/fontface_detector_C1000_nuclear0.2_A_H_L_I_Merge.svm") >> detector_front;
-	deserialize("E:/dlibTrain/leftface_detector_C500_nuclear0.8_A_H_L_I_Merge.svm") >> detector_left;
-	deserialize("E:/dlibTrain/rightface_detector_C600_nuclear1.0_thre0.22_A_H_L_I_Merge.svm") >> detector_right;
-	deserialize("E:/dlibTrain/leftRotateface_detector_C650_nuclear0.2_thre0.16_8080_A_H_L_I_Merge.svm") >> detector_left_rotate;
-	deserialize("E:/dlibTrain/rightRotateface_detector_C900_nuclear0.8_thre0.1_8080_A_H_L_I_Merge.svm") >> detector_right_rotate;
+	deserialize("fontface_detector_C1000_nuclear0.2_A_H_L_I_Merge.svm") >> detector_front;
+	deserialize("leftface_detector_C500_nuclear0.8_A_H_L_I_Merge.svm") >> detector_left;
+	deserialize("rightface_detector_C600_nuclear1.0_thre0.22_A_H_L_I_Merge.svm") >> detector_right;
+	deserialize("leftRotateface_detector_C650_nuclear0.2_thre0.16_8080_A_H_L_I_Merge.svm") >> detector_left_rotate;
+	deserialize("rightRotateface_detector_C900_nuclear0.8_thre0.1_8080_A_H_L_I_Merge.svm") >> detector_right_rotate;
 	
 	my_detectors.push_back(detector_front);//ºØÃÂ≤‚ ‘
 	my_detectors.push_back(detector_left);
@@ -798,11 +798,11 @@ int main(int argc, char** argv)
 	//tt();
 	//test_face_detector_L_Detector();
 	//test_face_detector_A_L_I_Detector();
-	//test_face_detector_L_Detector_Camera();
+	test_face_detector_L_Detector_Camera();
 	//test_face_detector();
 	//darkenHalfImage();
 	//faceRotate();
 	//cameraFaceRotate();
 	//divide_Rotations();
-	tracking();
+	//tracking();
 }
