@@ -389,11 +389,11 @@ void test_self_face_detector_compare_with_standard_detector_Camera() {//将自定义
 
 	std::vector<object_detector<image_scanner_type>> my_detectors;
 	object_detector<image_scanner_type> detector_front,detector_left,detector_right, detector_left_rotate, detector_right_rotate;
-	deserialize("fontface_detector_C1000_nuclear0.2_A_H_L_I_Merge.svm") >> detector_front;
-	deserialize("leftface_detector_C500_nuclear0.8_A_H_L_I_Merge.svm") >> detector_left;
-	deserialize("rightface_detector_C600_nuclear1.0_thre0.22_A_H_L_I_Merge.svm") >> detector_right;
-	deserialize("leftRotateface_detector_C650_nuclear0.2_thre0.16_8080_A_H_L_I_Merge.svm") >> detector_left_rotate;
-	deserialize("rightRotateface_detector_C900_nuclear0.8_thre0.1_8080_A_H_L_I_Merge.svm") >> detector_right_rotate;
+	deserialize("fontface_detector_C1000_nuclear0.2_A_H_L_I_Merge.svm") >> detector_front;//testing results:  0.978355    0.961702    0.958378
+	deserialize("leftface_detector_C500_nuclear0.8_A_H_L_I_Merge.svm") >> detector_left;//testing results:  0.986301    0.972973    0.971307
+	deserialize("rightface_detector_C600_nuclear1.0_thre0.22_A_H_L_I_Merge.svm") >> detector_right; //testing results : 0.975       1           0.996425
+	deserialize("leftRotateface_detector_C700_nuclear0.8_thre0.2_8080_A_H_L_I_Merge.svm") >> detector_left_rotate;//testing results:  0.982533 0.957447 0.955931 
+	deserialize("rightRotateface_detector_C900_nuclear0.8_thre0.1_8080_A_H_L_I_Merge.svm") >> detector_right_rotate;//testing results:  0.986784 0.953191 0.950774
 	
 	my_detectors.push_back(detector_front);//集体测试
 	my_detectors.push_back(detector_left);
@@ -401,11 +401,11 @@ void test_self_face_detector_compare_with_standard_detector_Camera() {//将自定义
 	my_detectors.push_back(detector_left_rotate);
 	my_detectors.push_back(detector_right_rotate);
 
-	//object_detector<image_scanner_type> detector_all(my_detectors);//将检测器数组整合为一个总检测器
-	//serialize("detector_all.svm") << detector_all;
+	object_detector<image_scanner_type> detector_all(my_detectors);//将检测器数组整合为一个总检测器
+	serialize("detector_all.svm") << detector_all;
 
-	object_detector<image_scanner_type> detector_all;
-	deserialize("detector_all.svm") >> detector_all;
+	//object_detector<image_scanner_type> detector_all;
+	//deserialize("detector_all.svm") >> detector_all;
 
 	//object_detector<image_scanner_type> detector;
 	//deserialize("E:/dlibTrain/leftRotateface_detector_C700_nuclear0.2_thre0.08_A_H_L_I_Merge.svm") >> detector;//单个测试
@@ -792,11 +792,11 @@ int main(int argc, char** argv)
 	//tt();
 	//test_face_detector_L_Detector();
 	//test_face_detector_A_L_I_Detector();
-	//test_self_face_detector_compare_with_standard_detector_Camera();
+	test_self_face_detector_compare_with_standard_detector_Camera();
 	//test_face_detector();
 	//darkenHalfImage();
 	//faceRotate();
 	//cameraFaceRotate();
 	//divide_Rotations();
-	tracking();
+	//tracking();
 }

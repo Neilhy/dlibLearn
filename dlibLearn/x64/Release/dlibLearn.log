@@ -1,7 +1,10 @@
-﻿生成启动时间为 2017/9/14 14:43:48。
+﻿生成启动时间为 2017/9/14 16:33:08。
      1>项目“E:\codingWorkplace\dlibLearn\dlibLearn\dlibLearn.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         E:\vs2015\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D NDEBUG /D _CONSOLE /D DLIB_JPEG_SUPPORT /D DLIB_PNG_SUPPORT /D DLIB_HAVE_AVX /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt main.cpp
+         E:\vs2015\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D NDEBUG /D _CONSOLE /D DLIB_JPEG_SUPPORT /D DLIB_PNG_SUPPORT /D DLIB_HAVE_AVX /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt Fitting.cpp main.cpp trainer.cpp
+         Fitting.cpp
+     1>Fitting.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\001company\face\dlib-19.2\dlib\image_transforms/morphological_operations.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
          main.cpp
      1>e:\001company\face\dlib-19.2\dlib\image_transforms/morphological_operations.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
      1>e:\001company\face\dlib-19.2\dlib\image_processing/shape_predictor.h(153): warning C4018: “<”: 有符号/无符号不匹配
@@ -27,6 +30,10 @@
                  [
                      image_type=dlib::cv_image<dlib::bgr_pixel>
                  ]
+         trainer.cpp
+     1>e:\001company\face\dlib-19.2\dlib\image_transforms/morphological_operations.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>e:\001company\face\dlib-19.2\dlib\image_processing/shape_predictor.h(153): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\001company\face\dlib-19.2\dlib\image_processing/shape_predictor.h(187): warning C4018: “<”: 有符号/无符号不匹配
        Link:
          E:\vs2015\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\codingWorkplace\dlibLearn\x64\Release\dlibLearn.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"E:\001Company\face\dlib-builded\Release" /LIBPATH:E:\codingWorkplace\dlibLearn\x64\Release dlib.lib jpeg.lib png.lib zlib.lib "E:\opencv\opencvbuild\install\x64\vc14\lib\*.lib" opencv_world320d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"E:\codingWorkplace\dlibLearn\x64\Release\dlibLearn.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\codingWorkplace\dlibLearn\x64\Release\dlibLearn.lib" /MACHINE:X64 /arch:AVX x64\Release\source.obj
          x64\Release\Fitting.obj
@@ -35,13 +42,13 @@
          x64\Release\trainer.obj
      1>LINK : warning LNK4044: 无法识别的选项“/arch:AVX”；已忽略
          正在生成代码
-         5 of 8022 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
-           4 functions were new in current compilation
-           1 functions had inline decision re-evaluated but remain unchanged
+         2 of 8815 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+           0 functions were new in current compilation
+           4 functions had inline decision re-evaluated but remain unchanged
          已完成代码的生成
          dlibLearn.vcxproj -> E:\codingWorkplace\dlibLearn\x64\Release\dlibLearn.exe
      1>已完成生成项目“E:\codingWorkplace\dlibLearn\dlibLearn\dlibLearn.vcxproj”(Build 个目标)的操作。
 
 已成功生成。
 
-已用时间 00:00:11.32
+已用时间 00:00:21.17
