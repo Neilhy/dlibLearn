@@ -32,7 +32,7 @@ int getArrayLen(T& array) {
 	return (sizeof(array) / sizeof(array[0]));
 }
 
-void detectFaces() {
+void detectFaces() {//检测器检测的测试函数
 	try
 	{
 
@@ -72,7 +72,7 @@ void detectFaces() {
 	}
 }
 
-void trainingDetector() {
+void trainingDetector() {//训练检测器的样例函数
 	try
 	{
 
@@ -170,7 +170,7 @@ void trainingDetector() {
 		cout << e.what() << endl;
 	}
 }
-void t() {
+void t() {//训练单个检测器的函数
 	try
 	{
 
@@ -218,12 +218,12 @@ void t() {
 		cout << e.what() << endl;
 	}
 }
-void tt() {
+void tt() {//训练检测器集合的函数，即使用for循环训练不同的参数
 	try
 	{
 		
-		const string faces_train_xml = "E:/001Company/face/dlib-19.2/examples/faces/training.xml";
-		const string faces_test_xml = "E:/001Company/face/dlib-19.2/examples/faces/testing.xml";
+		const string faces_train_xml = "E:/001Company/face/dlib-19.2/examples/faces/training.xml";//训练数据集
+		const string faces_test_xml = "E:/001Company/face/dlib-19.2/examples/faces/testing.xml";//测试数据集
 
 		int C[] = { 700, 750, 800, 850, 900, 950, 1000, 1050, 1100, 1150, 1200 };
 		float nuclear[] = { 1.0, 1.2, 1.4, 0.8, 0.6, 0.4, 0.2, 0.1 };
@@ -238,14 +238,14 @@ void tt() {
 		for (int d = 0; d<degree_len; d++) {
 
 			int degree_ = degree[d];
-			double angle = 3.1415926 * degree_ / 180;
+			double angle = 3.1415926 * degree_ / 180;//角度的计算公式，转化成弧度制
 
 			dlib::array<array2d<unsigned char>> images_train;
 			std::vector<std::vector<rectangle>> face_boxes_train, face_boxes_test;
 			cout << "Before loading images..." << endl;
 			load_image_dataset(images_train, face_boxes_train, faces_train_xml);
 			cout << "num training images: " << images_train.size() << endl;
-			dlib::rotate_image_dataset(angle, images_train, face_boxes_train);
+			dlib::rotate_image_dataset(angle, images_train, face_boxes_train);//旋转数据集
 			cout << "Rotated :" << degree[d] << endl;
 
 			dlib::array<array2d<unsigned char>> images_test;
@@ -304,7 +304,7 @@ void tt() {
 		cout << e.what() << endl;
 	}
 }
-void test_face_detector_L_Detector() {
+void test_face_detector_L_Detector() {//一张一张图片进行检测测试：对于fontface_detector_no_part_samples_test.svm
 	frontal_face_detector detectorStandard = get_frontal_face_detector();
 
 	const string faces_test_directory = "E:/dlibTrain";
@@ -340,7 +340,7 @@ void test_face_detector_L_Detector() {
 		cin.get();
 	}
 }
-void test_face_detector_A_L_I_Detector() {
+void test_face_detector_A_L_I_Detector() {//一张一张图片进行检测测试：对于face_detector_A_L_I.svm
 	frontal_face_detector detectorStandard = get_frontal_face_detector();
 
 	const string faces_test_directory = "E:/dlibTrain";
@@ -377,7 +377,7 @@ void test_face_detector_A_L_I_Detector() {
 		cin.get();
 	}
 }
-void test_face_detector_L_Detector_Camera() {
+void test_self_face_detector_compare_with_standard_detector_Camera() {//将自定义的检测器与dlib自带的检测器进行比较，使用摄像头
 	cv::VideoCapture cap(0);
 	//cv::VideoCapture cap("E:/software/Youku Files/download/test.mp4");
 	if (!cap.isOpened())
@@ -449,7 +449,7 @@ void test_face_detector_L_Detector_Camera() {
 		standardWin.add_overlay(sdets, rgb_pixel(0, 255, 0));
 	}
 }
-int test_face_detector() {
+int test_face_detector() {//测试检测器的精度、回归率、平均精度
 	
 	const string faces_svm = "E:/dlibTrain/fontface_detector_A_H_L_I_Merge.svm"; 
 	const string faces_test_xml = "E:/dlibTrain/fontFaces_H_testset_no_missed_faces_no_part.xml"; 
@@ -470,7 +470,7 @@ int test_face_detector() {
 	cout << "testing results:  " << test_object_detection_function(detector, images_test, face_boxes_test) << endl;//testing
 	return 0;
 }
-void darkenHalfImage() {
+void darkenHalfImage() {//将方框里的一半区域进行像素黑化
 	const string faces_test_directory = "E:/dlibTrain";
 	dlib::array<array2d<unsigned char>> imagesArray;
 	std::vector<std::vector<rectangle>> boxesArray;
@@ -485,7 +485,7 @@ void darkenHalfImage() {
 		for (int j = 0; j < dets.size(); j++) {
 			box = dets[j];
 			cv::Mat dark(box.height(), box.width()*0.4, CV_8UC1,cv::Scalar(0));
-			dark.copyTo(src(cv::Rect(box.left(), box.top(), dark.cols, dark.rows)));
+			dark.copyTo(src(cv::Rect(box.left(), box.top(), dark.cols, dark.rows)));//使用黑色的Mat盖住图像
 			cv::imshow("dest", src);
 			cin.get();
 			//string file = (faces_test_directory +"/"+ to_string(i)+".jpg");
@@ -496,7 +496,7 @@ void darkenHalfImage() {
 	}
 }
 
-void faceRotate() {
+void faceRotate() {//计算人脸的旋转角度
 	const string faces_test_directory = "E:/dlibTrain";
 
 	dlib::array<array2d<unsigned char>> images_test;
@@ -523,7 +523,7 @@ void faceRotate() {
 	}
 }
 
-void cameraFaceRotate() {
+void cameraFaceRotate() {//使用摄像头来展示人脸的旋转角度
 	try {
 		cv::VideoCapture cap(0);
 		//cv::VideoCapture cap("E:/software/Youku Files/download/test.mp4");
@@ -612,7 +612,7 @@ void cameraFaceRotate() {
 	}
 }
 
-void divide_Rotations() {//按照角度分类
+void divide_Rotations() {//按照角度分类人脸数据集
 	const string faces_test_directory = "E:/dlibTrain";
 	tinyxml2::XMLDocument doc, fontFace;
 	tinyxml2::XMLElement* root = fontFace.NewElement("dataset");
@@ -670,6 +670,8 @@ void divide_Rotations() {//按照角度分类
 	fontFace.SaveFile((faces_test_directory + "/rightFaces_H_testset.xml").c_str());
 }
 
+
+
 // 移动鼠标 选取矩形框  
 void mouseClickCallback(int event,
 	int x, int y, int flags, void* userdata)
@@ -711,32 +713,24 @@ void tracking() {
 	//5种跟踪算法
 	// "KCF"：目标人物与其他人在画面上大面积交错以后，会出现跟踪错误
 	// "MIL"：速度慢，会出现跟踪错误
-	//"BOOSTING"：慢，会出现跟踪错误
-	//"MEDIANFLOW"：比较流畅，但是跟踪效果差，到了边界后会将方框变大
-	//"TLD"：非常慢，自动调整跟踪目标的大小（框），在目标周围没有明显干扰的情况下，也会跟踪错误
+	// "BOOSTING"：慢，会出现跟踪错误
+	// "MEDIANFLOW"：比较流畅，但是跟踪效果差，到了边界后会将方框变大
+	// "TLD"：非常慢，自动调整跟踪目标的大小（框），在目标周围没有明显干扰的情况下，也会跟踪错误
 	cv::Ptr<cv::Tracker> tracker;// = cv::TrackerKCF::create();
-	//cv::Ptr<cv::TrackerMIL> tracker;// = cv::TrackerMIL::create();
+	//cv::Ptr<cv::TrackerMIL> tracker;// = cv::TrackerMIL::create();//可以使用如下方法初始化
 	//cv::Ptr<cv::TrackerBoosting> tracker;// = cv::TrackerBoosting::create();
 	//cv::Ptr<cv::TrackerMedianFlow> tracker;// = cv::TrackerMedianFlow::create();
 	//cv::Ptr<cv::TrackerTLD> tracker;// = cv::TrackerTLD::create();
 
-
-	//cap >> frame;
-	//cv::resize(frame, frame, cv::Size(), 0.25, 0.25);
 	typedef scan_fhog_pyramid<pyramid_down<6> > image_scanner_type;// 5/6 rate down size
 	object_detector<image_scanner_type> detector_all;
 	deserialize("detector_all.svm") >> detector_all;
 	
+	//cv::setMouseCallback("Tracker", mouseClickCallback, reinterpret_cast<void*>(rect));//使用鼠标在屏幕中圈划出需要跟踪的目标
 	
-	//cv::imshow("Tracker", frame);
-
-	//cv::setMouseCallback("Tracker", mouseClickCallback, reinterpret_cast<void*>(rect));
-	
-	
-	//double fps = 1000/cap.get(cv::CAP_PROP_FPS);
+	//double fps = 1000/cap.get(cv::CAP_PROP_FPS);//计算出视频的帧率：发现摄像头这里算不出来
 	bool initialized = false;
-	//image_window allWin;
-	//allWin.set_title("all detector");
+
 	while (cv::waitKey(2) != 27) {
 		cap >> frame;
 		if (frame.empty()) {
@@ -765,7 +759,7 @@ void tracking() {
 			rect->height = rec.height();
 
 			tracker = cv::TrackerKCF::create();//重新初始化，这样可以避免再次更新时失败
-			//tracker = cv::TrackerMedianFlow::create();
+			//tracker = cv::TrackerMedianFlow::create();//还可以使用这种方式初始化
 			//tracker = cv::TrackerMIL::create();
 			//tracker = cv::TrackerBoosting::create();
 			//tracker = cv::TrackerTLD::create();
@@ -777,10 +771,10 @@ void tracking() {
 		
 		//追踪器更新
 		if (tracker->update(frame, *rect))
-			cv::rectangle(frame, *rect, cv::Scalar(255, 0, 0), 2, 1);//将追踪到的方框显示出来
+			cv::rectangle(frame, *rect, cv::Scalar(255, 0, 0), 2, 1);//将追踪到的方框显示出来，蓝色粗线
 		else {//追踪不到的时候再用检测器初始化追踪器：可能是侧脸和旋转脸情况
 			initialized = false;
-			cv::rectangle(frame, *rect, cv::Scalar(0, 0, 255), 1, 1);//将检测到的方框显示出来
+			cv::rectangle(frame, *rect, cv::Scalar(0, 0, 255), 1, 1);//将检测到的方框显示出来，红色细线
 			cout << "lost" << endl;
 		}
 		cv::imshow("Tracker", frame);
@@ -798,11 +792,11 @@ int main(int argc, char** argv)
 	//tt();
 	//test_face_detector_L_Detector();
 	//test_face_detector_A_L_I_Detector();
-	test_face_detector_L_Detector_Camera();
+	//test_self_face_detector_compare_with_standard_detector_Camera();
 	//test_face_detector();
 	//darkenHalfImage();
 	//faceRotate();
 	//cameraFaceRotate();
 	//divide_Rotations();
-	//tracking();
+	tracking();
 }
